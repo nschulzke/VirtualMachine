@@ -1,16 +1,5 @@
 #include "Decoder2.h"
 
-Decoder2::Decoder2() : lastWire(drains), LogicGate()
-{
-	notA.setDrain(&splitNotA);						// A is binary 1
-	splitNotA.setDrain(outputs[0].getWireIn1());	// not in 0
-	splitNotA.setDrain2(outputs[2].getWireIn1());	// not in 2
-
-	notB.setDrain(&splitNotB);						// B is binary 2
-	splitNotB.setDrain(outputs[0].getWireIn2());	// not in 0
-	splitNotB.setDrain2(outputs[1].getWireIn2());	// not in 1
-}
-
 void Decoder2::update()
 {
 	notA.getWireIn1()->setSource(inputA);		// A is binary 1

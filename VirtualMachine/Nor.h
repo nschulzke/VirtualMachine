@@ -8,7 +8,12 @@
 class Nor : public LogicGate
 {
 public:
-	Nor();
+	Nor(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		transPA(&transPB, true),
+		transPB(&splitOutput),
+		splitOutput(&splitN),
+		splitN(&transNA, &transNB)
+	{};
 protected:
 	void update();
 	P_type transPA;

@@ -8,7 +8,10 @@
 class Not : public LogicGate
 {
 public:
-	Not();
+	Not(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		transP(&splitter, true),
+		splitter(&transN)
+	{};
 protected:
 	void update();
 	P_type transP;

@@ -1,10 +1,5 @@
 #include "And.h"
 
-And::And() : LogicGate()
-{
-	nandGate.setDrain(notGate.getWireIn1());
-}
-
 void And::update()
 {
 	nandGate.getWireIn1()->setSource(inputA);

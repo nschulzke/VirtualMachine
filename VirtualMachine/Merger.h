@@ -5,7 +5,10 @@
 class Merger : public Wire
 {
 public:
-	explicit Merger();
+	Merger::Merger(Wire* drainIn = nullptr, bool sourceIn = false) : Wire(drainIn, sourceIn),
+		wireIn1(this),
+		wireIn2(this)
+	{};
 	void setSource(bool bitIn);
 	Wire* getWireIn1();
 	Wire* getWireIn2();

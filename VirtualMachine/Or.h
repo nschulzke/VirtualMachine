@@ -7,7 +7,9 @@
 class Or : public LogicGate
 {
 public:
-	Or();
+	Or(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		norGate(notGate.getWireIn1())
+	{}
 protected:
 	void update();
 	Nor norGate;

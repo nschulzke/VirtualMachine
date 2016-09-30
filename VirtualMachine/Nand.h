@@ -9,7 +9,13 @@
 class Nand : public LogicGate
 {
 public:
-	Nand();
+	Nand(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		transPA(mergerP.getWireIn1(), true),
+		transPB(mergerP.getWireIn2(), true),
+		mergerP(&splitterP),
+		splitterP(&transNA),
+		transNA(&transNB)
+	{};
 protected:
 	void update();
 	P_type transPA;

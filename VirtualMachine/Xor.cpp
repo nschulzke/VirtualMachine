@@ -1,11 +1,5 @@
 #include "Xor.h"
 
-Xor::Xor()
-{
-	nandGate.setDrain(andGate.getWireIn1());
-	orGate.setDrain(andGate.getWireIn2());
-}
-
 void Xor::update()
 {
 	nandGate.getWireIn1()->setSource(inputA);

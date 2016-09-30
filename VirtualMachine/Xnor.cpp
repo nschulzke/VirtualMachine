@@ -1,11 +1,5 @@
 #include "Xnor.h"
 
-Xnor::Xnor()
-{
-	nandGateIn.setDrain(nandGateOut.getWireIn1());
-	orGate.setDrain(nandGateOut.getWireIn2());
-}
-
 void Xnor::update()
 {
 	nandGateIn.getWireIn1()->setSource(inputA);

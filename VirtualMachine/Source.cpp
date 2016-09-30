@@ -123,10 +123,18 @@ void testDecoder()
 	cout << "Status:";
 	cout << wireOut0.getOutput() << wireOut1.getOutput() << wireOut2.getOutput() << wireOut3.getOutput() << endl;
 
+	cout << Wire::updateCount << endl;
 }
 
 int main()
 {
+	testNot();
+	testNand();
+	testAnd();
+	testNor();
+	testOr();
+	testXor();
+	testXnor();
 	testDecoder();
 	system("PAUSE");
 }

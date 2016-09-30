@@ -8,7 +8,13 @@
 class Decoder2 : public LogicGate
 {
 public:
-	Decoder2();
+	Decoder2(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		lastWire(drains),
+		notA(&splitNotA),
+		splitNotA(outputs[0].getWireIn1(), outputs[2].getWireIn1()),
+		notB(&splitNotB),
+		splitNotB(outputs[0].getWireIn2(), outputs[1].getWireIn2())
+	{};
 	void setDrain(Wire* target);
 	void setDrain(Wire* target, size_t index);
 	bool checkDrain() const;

@@ -6,7 +6,10 @@
 class LogicGate : public Merger
 {
 public:
-	explicit LogicGate() : inputA(false), inputB(false), Merger() {};
+	LogicGate(Wire* drainIn = nullptr) : Merger(drainIn),
+		inputA(false),
+		inputB(false)
+	{};
 	virtual void setSource(bool bitIn);
 	bool getOutput() const;
 protected:

@@ -7,7 +7,9 @@
 class And : public LogicGate
 {
 public:
-	And();
+	And(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		nandGate(notGate.getWireIn1())
+	{};
 protected:
 	void update();
 	Nand nandGate;

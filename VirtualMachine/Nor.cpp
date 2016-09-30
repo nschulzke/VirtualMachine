@@ -1,15 +1,5 @@
 #include "Nor.h"
 
-Nor::Nor()
-{
-	transPA.setSource(true);
-	transPA.setDrain(&transPB);
-	transPB.setDrain(&splitOutput);
-	splitOutput.setDrain(&splitN);
-	splitN.setDrain(&transNA);
-	splitN.setDrain2(&transNB);
-}
-
 void Nor::update()
 {
 	transNA.setGate(inputA);

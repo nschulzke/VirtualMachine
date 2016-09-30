@@ -1,11 +1,5 @@
 #include "Merger.h"
 
-Merger::Merger() : Wire()
-{
-	wireIn1.setDrain(this);
-	wireIn2.setDrain(this);
-}
-
 void Merger::setSource(bool bitIn)
 {
 	bool out1 = wireIn1.getOutput();

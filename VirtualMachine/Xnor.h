@@ -7,7 +7,10 @@
 class Xnor : public LogicGate
 {
 public:
-	Xnor();
+	Xnor(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		nandGateIn(nandGateOut.getWireIn1()),
+		orGate(nandGateOut.getWireIn2())
+	{};
 protected:
 	void update();
 	Nand nandGateIn;

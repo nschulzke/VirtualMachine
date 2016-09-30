@@ -8,7 +8,10 @@
 class Xor : public LogicGate
 {
 public:
-	Xor();
+	Xor(Wire* drainIn = nullptr) : LogicGate(drainIn),
+		nandGate(andGate.getWireIn1()),
+		orGate(andGate.getWireIn2())
+	{}
 protected:
 	void update();
 	Nand nandGate;
