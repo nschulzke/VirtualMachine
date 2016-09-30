@@ -112,6 +112,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="And.h" />
+    <ClInclude Include="Decoder2.h" />
     <ClInclude Include="Merger.h" />
     <ClInclude Include="Nor.h" />
     <ClInclude Include="Or.h" />
@@ -128,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="And.cpp" />
+    <ClCompile Include="Decoder2.cpp" />
     <ClCompile Include="LogicGate.cpp" />
     <ClCompile Include="Merger.cpp" />
     <ClCompile Include="Nand.cpp" />

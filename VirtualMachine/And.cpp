@@ -2,13 +2,13 @@
 
 And::And() : LogicGate()
 {
-	nandGate.setDrain(notGate.getWire1());
+	nandGate.setDrain(notGate.getWireIn1());
 }
 
 void And::update()
 {
-	nandGate.getWire1()->setSource(inputA);
-	nandGate.getWire2()->setSource(inputB);
+	nandGate.getWireIn1()->setSource(inputA);
+	nandGate.getWireIn2()->setSource(inputB);
 	outputVal = notGate.getOutput();
 	if (drain != nullptr)
 		drain->setSource(this->getOutput());

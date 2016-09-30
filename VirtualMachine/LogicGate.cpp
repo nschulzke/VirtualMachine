@@ -7,7 +7,7 @@ bool LogicGate::getOutput() const
 
 void LogicGate::setSource(bool bitIn)
 {
-	inputA = wire1.getOutput();
-	inputB = wire2.getOutput();
+	inputA = wireIn1.getOutput();
+	inputB = wireIn2.getOutput();
 	update();
 }

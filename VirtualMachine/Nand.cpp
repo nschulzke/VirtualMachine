@@ -4,8 +4,8 @@ Nand::Nand() : LogicGate()
 {
 	transPA.setSource(true);
 	transPB.setSource(true);
-	transPA.setDrain(mergerP.getWire1());
-	transPB.setDrain(mergerP.getWire2());
+	transPA.setDrain(mergerP.getWireIn1());
+	transPB.setDrain(mergerP.getWireIn2());
 	mergerP.setDrain(&splitterP);
 	splitterP.setDrain(&transNA);
 	transNA.setDrain(&transNB);

@@ -2,16 +2,16 @@
 
 Xnor::Xnor()
 {
-	nandGateIn.setDrain(nandGateOut.getWire1());
-	orGate.setDrain(nandGateOut.getWire2());
+	nandGateIn.setDrain(nandGateOut.getWireIn1());
+	orGate.setDrain(nandGateOut.getWireIn2());
 }
 
 void Xnor::update()
 {
-	nandGateIn.getWire1()->setSource(inputA);
-	orGate.getWire1()->setSource(inputA);
-	nandGateIn.getWire2()->setSource(inputB);
-	orGate.getWire2()->setSource(inputB);
+	nandGateIn.getWireIn1()->setSource(inputA);
+	orGate.getWireIn1()->setSource(inputA);
+	nandGateIn.getWireIn2()->setSource(inputB);
+	orGate.getWireIn2()->setSource(inputB);
 	outputVal = nandGateOut.getOutput();
 	if (drain != nullptr)
 		drain->setSource(this->getOutput());

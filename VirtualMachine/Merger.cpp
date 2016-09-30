@@ -2,26 +2,26 @@
 
 Merger::Merger() : Wire()
 {
-	wire1.setDrain(this);
-	wire2.setDrain(this);
+	wireIn1.setDrain(this);
+	wireIn2.setDrain(this);
 }
 
 void Merger::setSource(bool bitIn)
 {
-	bool out1 = wire1.getOutput();
-	bool out2 = wire2.getOutput();
+	bool out1 = wireIn1.getOutput();
+	bool out2 = wireIn2.getOutput();
 	source = (out1 || out2);
 	update();
 }
 
-Wire* Merger::getWire1()
+Wire* Merger::getWireIn1()
 {
-	Wire* retPtr = &wire1;
+	Wire* retPtr = &wireIn1;
 	return retPtr;
 }
 
-Wire* Merger::getWire2()
+Wire* Merger::getWireIn2()
 {
-	Wire* retPtr = &wire2;
+	Wire* retPtr = &wireIn2;
 	return retPtr;
 }

@@ -7,9 +7,9 @@ class Merger : public Wire
 public:
 	explicit Merger();
 	void setSource(bool bitIn);
-	Wire* getWire1();
-	Wire* getWire2();
+	Wire* getWireIn1();
+	Wire* getWireIn2();
 protected:
-	Wire wire1;
-	Wire wire2;
+	Wire wireIn1;
+	Wire wireIn2;
 };

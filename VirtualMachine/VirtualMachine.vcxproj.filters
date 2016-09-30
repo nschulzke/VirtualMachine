@@ -1,26 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="N_type.h">
-      <Filter>Wiring</Filter>
-    </ClInclude>
-    <ClInclude Include="P_type.h">
-      <Filter>Wiring</Filter>
-    </ClInclude>
     <ClInclude Include="Transistor.h">
-      <Filter>Wiring</Filter>
-    </ClInclude>
-    <ClInclude Include="Splitter.h">
-      <Filter>Wiring</Filter>
+      <Filter>Wiring\Abstract</Filter>
     </ClInclude>
     <ClInclude Include="Merger.h">
-      <Filter>Wiring</Filter>
+      <Filter>Wiring\Wires</Filter>
+    </ClInclude>
+    <ClInclude Include="Splitter.h">
+      <Filter>Wiring\Wires</Filter>
     </ClInclude>
     <ClInclude Include="Wire.h">
-      <Filter>Wiring</Filter>
+      <Filter>Wiring\Wires</Filter>
+    </ClInclude>
+    <ClInclude Include="N_type.h">
+      <Filter>Wiring\Transistors</Filter>
+    </ClInclude>
+    <ClInclude Include="P_type.h">
+      <Filter>Wiring\Transistors</Filter>
     </ClInclude>
     <ClInclude Include="LogicGate.h">
-      <Filter>Gates\Abstract Class</Filter>
+      <Filter>Gates\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="And.h">
+      <Filter>Gates\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Or.h">
+      <Filter>Gates\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Xnor.h">
+      <Filter>Gates\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Xor.h">
+      <Filter>Gates\Complex</Filter>
     </ClInclude>
     <ClInclude Include="Nand.h">
       <Filter>Gates\Fundamental</Filter>
@@ -31,41 +43,44 @@
     <ClInclude Include="Not.h">
       <Filter>Gates\Fundamental</Filter>
     </ClInclude>
-    <ClInclude Include="And.h">
-      <Filter>Gates\Complex</Filter>
-    </ClInclude>
-    <ClInclude Include="Or.h">
-      <Filter>Gates\Complex</Filter>
-    </ClInclude>
-    <ClInclude Include="Xor.h">
-      <Filter>Gates\Complex</Filter>
-    </ClInclude>
-    <ClInclude Include="Xnor.h">
-      <Filter>Gates\Complex</Filter>
+    <ClInclude Include="Decoder2.h">
+      <Filter>Decoders</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="N_type.cpp">
-      <Filter>Wiring</Filter>
-    </ClCompile>
-    <ClCompile Include="P_type.cpp">
-      <Filter>Wiring</Filter>
-    </ClCompile>
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Transistor.cpp">
-      <Filter>Wiring</Filter>
-    </ClCompile>
-    <ClCompile Include="Splitter.cpp">
-      <Filter>Wiring</Filter>
-    </ClCompile>
-    <ClCompile Include="Wire.cpp">
-      <Filter>Wiring</Filter>
+      <Filter>Wiring\Abstract</Filter>
     </ClCompile>
     <ClCompile Include="Merger.cpp">
-      <Filter>Wiring</Filter>
+      <Filter>Wiring\Wires</Filter>
+    </ClCompile>
+    <ClCompile Include="Splitter.cpp">
+      <Filter>Wiring\Wires</Filter>
+    </ClCompile>
+    <ClCompile Include="Wire.cpp">
+      <Filter>Wiring\Wires</Filter>
+    </ClCompile>
+    <ClCompile Include="N_type.cpp">
+      <Filter>Wiring\Transistors</Filter>
+    </ClCompile>
+    <ClCompile Include="P_type.cpp">
+      <Filter>Wiring\Transistors</Filter>
     </ClCompile>
     <ClCompile Include="LogicGate.cpp">
-      <Filter>Gates\Abstract Class</Filter>
+      <Filter>Gates\Abstract</Filter>
+    </ClCompile>
+    <ClCompile Include="And.cpp">
+      <Filter>Gates\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Or.cpp">
+      <Filter>Gates\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Xnor.cpp">
+      <Filter>Gates\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Xor.cpp">
+      <Filter>Gates\Complex</Filter>
     </ClCompile>
     <ClCompile Include="Nand.cpp">
       <Filter>Gates\Fundamental</Filter>
@@ -76,17 +91,8 @@
     <ClCompile Include="Not.cpp">
       <Filter>Gates\Fundamental</Filter>
     </ClCompile>
-    <ClCompile Include="And.cpp">
-      <Filter>Gates\Complex</Filter>
-    </ClCompile>
-    <ClCompile Include="Or.cpp">
-      <Filter>Gates\Complex</Filter>
-    </ClCompile>
-    <ClCompile Include="Xor.cpp">
-      <Filter>Gates\Complex</Filter>
-    </ClCompile>
-    <ClCompile Include="Xnor.cpp">
-      <Filter>Gates\Complex</Filter>
+    <ClCompile Include="Decoder2.cpp">
+      <Filter>Decoders</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -96,14 +102,26 @@
     <Filter Include="Wiring">
       <UniqueIdentifier>{bbe7a56f-4e35-4bca-8594-a53d22e7d62e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Gates\Abstract Class">
-      <UniqueIdentifier>{ad342ea5-f04a-4713-9d32-c072a71102bc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Gates\Complex">
       <UniqueIdentifier>{e2ce0173-ae1e-474a-bb33-ad5dfc81e4ae}</UniqueIdentifier>
     </Filter>
     <Filter Include="Gates\Fundamental">
       <UniqueIdentifier>{d064ead8-287a-42d8-9df0-8b52cd7f91d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wiring\Abstract">
+      <UniqueIdentifier>{ee54e363-ce71-473a-866b-c5546be42aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wiring\Wires">
+      <UniqueIdentifier>{d0b8eded-9b86-4ec9-8f68-a7ea164a5dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Wiring\Transistors">
+      <UniqueIdentifier>{df540d58-90cb-4982-8d8c-93fcda8b4e13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gates\Abstract">
+      <UniqueIdentifier>{ad342ea5-f04a-4713-9d32-c072a71102bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Decoders">
+      <UniqueIdentifier>{46c40717-b3d5-4f64-a39c-048617ac19f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -2,16 +2,16 @@
 
 Xor::Xor()
 {
-	nandGate.setDrain(andGate.getWire1());
-	orGate.setDrain(andGate.getWire2());
+	nandGate.setDrain(andGate.getWireIn1());
+	orGate.setDrain(andGate.getWireIn2());
 }
 
 void Xor::update()
 {
-	nandGate.getWire1()->setSource(inputA);
-	orGate.getWire1()->setSource(inputA);
-	nandGate.getWire2()->setSource(inputB);
-	orGate.getWire2()->setSource(inputB);
+	nandGate.getWireIn1()->setSource(inputA);
+	orGate.getWireIn1()->setSource(inputA);
+	nandGate.getWireIn2()->setSource(inputB);
+	orGate.getWireIn2()->setSource(inputB);
 	outputVal = andGate.getOutput();
 	if (drain != nullptr)
 		drain->setSource(this->getOutput());
