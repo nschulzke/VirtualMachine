@@ -10,15 +10,6 @@
     <ClInclude Include="Transistor.h">
       <Filter>Wiring</Filter>
     </ClInclude>
-    <ClInclude Include="Nand.h">
-      <Filter>Gates</Filter>
-    </ClInclude>
-    <ClInclude Include="LogicGate.h">
-      <Filter>Gates</Filter>
-    </ClInclude>
-    <ClInclude Include="Not.h">
-      <Filter>Gates</Filter>
-    </ClInclude>
     <ClInclude Include="Splitter.h">
       <Filter>Wiring</Filter>
     </ClInclude>
@@ -28,12 +19,29 @@
     <ClInclude Include="Wire.h">
       <Filter>Wiring</Filter>
     </ClInclude>
-    <ClInclude Include="And.h">
-      <Filter>Gates</Filter>
+    <ClInclude Include="LogicGate.h">
+      <Filter>Gates\Abstract Class</Filter>
     </ClInclude>
-    <ClInclude Include="Nor.h" />
+    <ClInclude Include="Nand.h">
+      <Filter>Gates\Fundamental</Filter>
+    </ClInclude>
+    <ClInclude Include="Nor.h">
+      <Filter>Gates\Fundamental</Filter>
+    </ClInclude>
+    <ClInclude Include="Not.h">
+      <Filter>Gates\Fundamental</Filter>
+    </ClInclude>
+    <ClInclude Include="And.h">
+      <Filter>Gates\Complex</Filter>
+    </ClInclude>
     <ClInclude Include="Or.h">
-      <Filter>Gates</Filter>
+      <Filter>Gates\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Xor.h">
+      <Filter>Gates\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Xnor.h">
+      <Filter>Gates\Complex</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -42,12 +50,6 @@
     </ClCompile>
     <ClCompile Include="P_type.cpp">
       <Filter>Wiring</Filter>
-    </ClCompile>
-    <ClCompile Include="Nand.cpp">
-      <Filter>Gates</Filter>
-    </ClCompile>
-    <ClCompile Include="Not.cpp">
-      <Filter>Gates</Filter>
     </ClCompile>
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Transistor.cpp">
@@ -63,16 +65,28 @@
       <Filter>Wiring</Filter>
     </ClCompile>
     <ClCompile Include="LogicGate.cpp">
-      <Filter>Gates</Filter>
+      <Filter>Gates\Abstract Class</Filter>
     </ClCompile>
-    <ClCompile Include="And.cpp">
-      <Filter>Gates</Filter>
+    <ClCompile Include="Nand.cpp">
+      <Filter>Gates\Fundamental</Filter>
     </ClCompile>
     <ClCompile Include="Nor.cpp">
-      <Filter>Gates</Filter>
+      <Filter>Gates\Fundamental</Filter>
+    </ClCompile>
+    <ClCompile Include="Not.cpp">
+      <Filter>Gates\Fundamental</Filter>
+    </ClCompile>
+    <ClCompile Include="And.cpp">
+      <Filter>Gates\Complex</Filter>
     </ClCompile>
     <ClCompile Include="Or.cpp">
-      <Filter>Gates</Filter>
+      <Filter>Gates\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Xor.cpp">
+      <Filter>Gates\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Xnor.cpp">
+      <Filter>Gates\Complex</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +95,15 @@
     </Filter>
     <Filter Include="Wiring">
       <UniqueIdentifier>{bbe7a56f-4e35-4bca-8594-a53d22e7d62e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gates\Abstract Class">
+      <UniqueIdentifier>{ad342ea5-f04a-4713-9d32-c072a71102bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gates\Complex">
+      <UniqueIdentifier>{e2ce0173-ae1e-474a-bb33-ad5dfc81e4ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gates\Fundamental">
+      <UniqueIdentifier>{d064ead8-287a-42d8-9df0-8b52cd7f91d1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

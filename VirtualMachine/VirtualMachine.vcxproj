@@ -123,6 +123,8 @@
     <ClInclude Include="P_type.h" />
     <ClInclude Include="Transistor.h" />
     <ClInclude Include="Wire.h" />
+    <ClInclude Include="Xnor.h" />
+    <ClInclude Include="Xor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="And.cpp" />
@@ -138,6 +140,8 @@
     <ClCompile Include="Transistor.cpp" />
     <ClCompile Include="Splitter.cpp" />
     <ClCompile Include="Wire.cpp" />
+    <ClCompile Include="Xnor.cpp" />
+    <ClCompile Include="Xor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

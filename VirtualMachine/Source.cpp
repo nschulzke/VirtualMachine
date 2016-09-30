@@ -4,6 +4,8 @@
 #include "And.h"
 #include "Nor.h"
 #include "Or.h"
+#include "Xor.h"
+#include "Xnor.h"
 
 using namespace std;
 
@@ -66,6 +68,20 @@ void testOr()
 	testGate(&gate);
 }
 
+void testXor()
+{
+	cout << "XOR:" << endl;
+	Xor gate;
+	testGate(&gate);
+}
+
+void testXnor()
+{
+	cout << "XNOR:" << endl;
+	Xnor gate;
+	testGate(&gate);
+}
+
 int main()
 {
 	testNot();
@@ -73,5 +89,7 @@ int main()
 	testAnd();
 	testNor();
 	testOr();
+	testXor();
+	testXnor();
 	system("PAUSE");
 }
