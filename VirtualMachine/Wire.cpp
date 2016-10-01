@@ -1,7 +1,5 @@
 #include "Wire.h"
 
-unsigned int Wire::updateCount = 0;
-
 void Wire::setSource(bool bitIn)
 {
 	source = bitIn;
@@ -11,7 +9,6 @@ void Wire::setSource(bool bitIn)
 void Wire::setDrain(Wire* target)
 {
 	drain = target;
-	update();
 }
 
 bool Wire::checkDrain() const
@@ -29,7 +26,6 @@ bool Wire::getOutput() const
 
 void Wire::update()
 {
-	updateCount++;
 	if (drain != nullptr)
 		drain->setSource(this->getOutput());
 }

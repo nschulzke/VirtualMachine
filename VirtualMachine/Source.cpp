@@ -99,31 +99,25 @@ void testDecoder()
 	decode.setDrain(&wireOut2, 2);
 	decode.setDrain(&wireOut3, 3);
 
-	cout << "0&0" << endl;
+	cout << "0&0:";
 	wireIn1->setSource(false);
 	wireIn2->setSource(false);
-	cout << "Status:";
 	cout << wireOut0.getOutput() << wireOut1.getOutput() << wireOut2.getOutput() << wireOut3.getOutput() << endl;
 
-	cout << "0&1" << endl;
+	cout << "0&1:";
 	wireIn1->setSource(true);
 	wireIn2->setSource(false);
-	cout << "Status:";
 	cout << wireOut0.getOutput() << wireOut1.getOutput() << wireOut2.getOutput() << wireOut3.getOutput() << endl;
 
-	cout << "1&0" << endl;
+	cout << "1&0:";
 	wireIn1->setSource(false);
 	wireIn2->setSource(true);
-	cout << "Status:";
 	cout << wireOut0.getOutput() << wireOut1.getOutput() << wireOut2.getOutput() << wireOut3.getOutput() << endl;
 
-	cout << "1&1" << endl;
+	cout << "1&1:";
 	wireIn1->setSource(true);
 	wireIn2->setSource(true);
-	cout << "Status:";
 	cout << wireOut0.getOutput() << wireOut1.getOutput() << wireOut2.getOutput() << wireOut3.getOutput() << endl;
-
-	cout << Wire::updateCount << endl;
 }
 
 int main()

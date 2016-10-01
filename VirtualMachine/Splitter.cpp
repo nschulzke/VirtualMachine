@@ -3,7 +3,6 @@
 void Splitter::setDrain2(Wire * target)
 {
 	drain2 = target;
-	update();
 }
 
 bool Splitter::checkDrain() const

@@ -11,7 +11,6 @@ public:
 	virtual void setDrain(Wire* target);
 	virtual bool checkDrain() const;
 	virtual bool getOutput() const;
-	static unsigned int updateCount;
 protected:
 	virtual void update();
 	bool source;
